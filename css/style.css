@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body, html {
+  height: 100%;
+}
+
+#global {
+  z-index: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #2F4F4F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#play {
+  z-index: 1;
+  position: relative;
+
+  width: 50%;
+  
+}
+
+#example {
+  position: absolute;
+  display: inline-block;
+  background-color: orange;
+  border-radius: 30px;
+  border: 4px solid #2F4F4F;
+  bottom: 0.2%;
+  left: 1%;
+}
+
+#expression {
+  position: absolute;
+  left: 10%;
+  top:  10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border: 7px ridge #2F4F4F;
+  border-radius: 20px;
+  background-color: #bad6ba;
+}
+
+#exp {
+  display: flex;
+  z-index: 3;
+  position: relative;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-size: 30px;
+  color: #2F4F4F;
+}
+
+#answer {
+  z-index: 3;
+  display: inline-block;
+  
+}
+
+#answ {
+  background-color: #bad6ba;
+  color: #2F4F4F;
+  border-radius: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-size: 17px;
+}
+
+#but {
+  background-color: orange;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+#molod {
+  display: flex;
+  position: absolute;
+  background-color: orange;
+  border: 7px ridge #2F4F4F;
+  border-radius: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  font-stretch: expanded;
+  justify-content: center;
+  align-items: center;
+  color: #2F4F4F;
+  top:  40%;
+  left: 30%;
+  display: none;
+}
+
+#shab {
+  bottom: 2px;
+  z-index: 3;
+  color: #bad6ba;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+}
