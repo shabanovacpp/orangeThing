@@ -98,5 +98,5 @@ setInterval(() => {
     }
     else move();
   }
-}, 1000);
+}, 300);
 
