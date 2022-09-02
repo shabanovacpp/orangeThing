@@ -29,8 +29,8 @@ body, html {
   position: absolute;
   display: inline-block;
   background-color: orange;
-  border-radius: 30px;
-  border: 4px solid #2F4F4F;
+  border-radius: 45%;
+  border: 5px solid #2F4F4F;
   bottom: 0.2%;
   left: 1%;
 }
