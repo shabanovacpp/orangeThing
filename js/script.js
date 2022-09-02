@@ -58,17 +58,17 @@ function getMolod() {
 
 function move() {
   let chan = parseInt(getComputedStyle(play).height)/8;
-  let tt = parseInt(getComputedStyle(example).top);
-  let ll = parseInt(getComputedStyle(example).left);
+  let tt = Number(getComputedStyle(example).top.slice(0,-2));
+  let ll = Number(getComputedStyle(example).left.slice(0,-2));
   let ttt = tt;
   let lll = ll;
   let timer = setInterval(function() {
     if (tt < ttt - chan*0.995 && ll > lll + chan) clearInterval(timer);
-    else if (tt < ttt - chan*0.995) example.style.left = `${ll + 1}px`;
-    else example.style.top = `${tt - 1}px`;
-    tt = parseInt(getComputedStyle(example).top);
-    ll = parseInt(getComputedStyle(example).left);
-  }, 0.5)
+    else if (tt < ttt - chan*0.995) example.style.left = `${ll + chan/60}px`;
+    else example.style.top = `${tt - chan/60}px`;
+    tt = Number(getComputedStyle(example).top.slice(0,-2));
+    ll = Number(getComputedStyle(example).left.slice(0,-2));
+  }, 1)
 }
 
 function changeText (text) {
