@@ -90,7 +90,7 @@ body, html {
   border-radius: 20px;
   font-family: 'Indie Flower', cursive;
   font-weight: 900;
-  font-stretch: expanded;
+  letter-spacing: 2px;
   justify-content: center;
   align-items: center;
   color: #2F4F4F;
