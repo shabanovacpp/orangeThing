@@ -63,7 +63,7 @@ function move() {
   let ttt = tt;
   let lll = ll;
   let timer = setInterval(function() {
-    if (tt < ttt - chan*0.995 && ll > lll + chan) clearInterval(timer);
+    if (tt < ttt - chan*0.995 && ll > lll + chan*0.985) clearInterval(timer);
     else if (tt < ttt - chan*0.995) example.style.left = `${ll + chan/60}px`;
     else example.style.top = `${tt - chan/60}px`;
     tt = Number(getComputedStyle(example).top.slice(0,-2));
